@@ -41,7 +41,7 @@ class HomeScreen extends ConsumerWidget {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  const DisplayWhiteText(text: 'My Todo List', size: 40),
+                  const DisplayWhiteText(text: 'Todo List', size: 40),
                 ],
               ),
             ),
@@ -62,7 +62,7 @@ class HomeScreen extends ConsumerWidget {
                     ),
                     const Gap(20),
                     Text(
-                      'Completed',
+                      'Selesai',
                       style: context.textTheme.headlineSmall?.copyWith(
                         fontWeight: FontWeight.bold,
                       ),
@@ -78,7 +78,7 @@ class HomeScreen extends ConsumerWidget {
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: DisplayWhiteText(
-                          text: 'Add New Task',
+                          text: 'Tambah Tugas Baru',
                         ),
                       ),
                     ),

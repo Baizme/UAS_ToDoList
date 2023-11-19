@@ -20,8 +20,8 @@ class DisplayListOfTasks extends ConsumerWidget {
     final height =
         isCompletedTasks ? deviceSize.height * 0.25 : deviceSize.height * 0.3;
     final emptyTasksAlert = isCompletedTasks
-        ? 'There is no completed task yet'
-        : 'There is no task to todo!';
+        ? 'Belum ada tugas yang selesai'
+        : 'Tidak ada tugas yang perlu dilakukan';
 
     return CommonContainer(
       height: height,
@@ -65,8 +65,8 @@ class DisplayListOfTasks extends ConsumerWidget {
                         AppAlerts.displaySnackbar(
                           context,
                           task.isCompleted
-                              ? 'Task incompleted'
-                              : 'Task completed',
+                              ? 'Tugas belum selesai'
+                              : 'Tugas selesai',
                         );
                       });
                     },

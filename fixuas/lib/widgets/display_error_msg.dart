@@ -15,7 +15,7 @@ class DisplayErrorMessage extends StatelessWidget {
       width: deviceSize.width,
       height: deviceSize.height * 0.3,
       child: const Center(
-        child: Text('Something went wrong'),
+        child: Text('Ada yang salah'),
       ),
     );
   }

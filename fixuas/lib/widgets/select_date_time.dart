@@ -18,7 +18,7 @@ class SelectDateTime extends ConsumerWidget {
       children: [
         Expanded(
           child: CommonTextField(
-            title: 'Date',
+            title: 'Tanggal',
             hintText: Helpers.dateFormatter(date),
             readOnly: true,
             suffixIcon: IconButton(
@@ -30,7 +30,7 @@ class SelectDateTime extends ConsumerWidget {
         const Gap(10),
         Expanded(
           child: CommonTextField(
-            title: 'Time',
+            title: 'Jam',
             hintText: Helpers.timeToString(time),
             readOnly: true,
             suffixIcon: IconButton(

@@ -41,7 +41,7 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
       appBar: AppBar(
         backgroundColor: colors.primary,
         title: const DisplayWhiteText(
-          text: 'Add New Task',
+          text: 'Tambah Tugas Baru',
         ),
       ),
       body: SafeArea(
@@ -52,8 +52,8 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               CommonTextField(
-                hintText: 'Task Title',
-                title: 'Task Title',
+                hintText: 'Judul Tugas',
+                title: 'Judul Tugas',
                 controller: _titleController,
               ),
               const Gap(30),
@@ -62,8 +62,8 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
               const SelectDateTime(),
               const Gap(30),
               CommonTextField(
-                hintText: 'Notes',
-                title: 'Notes',
+                hintText: 'Catatan',
+                title: 'Catatan',
                 maxLines: 6,
                 controller: _noteController,
               ),
@@ -73,7 +73,7 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
                 child: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: DisplayWhiteText(
-                    text: 'Save',
+                    text: 'Simpan',
                   ),
                 ),
               ),
@@ -102,11 +102,11 @@ class _CreateTaskScreenState extends ConsumerState<CreateTaskScreen> {
       );
 
       await ref.read(tasksProvider.notifier).createTask(task).then((value) {
-        AppAlerts.displaySnackbar(context, 'Task create successfully');
+        AppAlerts.displaySnackbar(context, 'Tugas berhasil ditambahkan');
         context.go(RouteLocation.home);
       });
     } else {
-      AppAlerts.displaySnackbar(context, 'Title cannot be empty');
+      AppAlerts.displaySnackbar(context, 'Judul tidak boleh kosong');
     }
   }
 }

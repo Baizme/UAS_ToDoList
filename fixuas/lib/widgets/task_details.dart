@@ -40,7 +40,7 @@ class TaskDetails extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('Task to be completed on '),
+                const Text('Tugas yang harus diselesaikan pada '),
                 Text(task.date),
                 Icon(
                   Icons.check_box,
@@ -57,7 +57,7 @@ class TaskDetails extends StatelessWidget {
           const Gap(16),
           Text(
             task.note.isEmpty
-                ? 'There is no additional note for this task'
+                ? 'Tidak ada catatan tambahan untuk tugas ini'
                 : task.note,
             style: context.textTheme.titleMedium,
             textAlign: TextAlign.center,
@@ -68,7 +68,7 @@ class TaskDetails extends StatelessWidget {
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Task Completed'),
+                Text('Tugas selesai'),
                 Icon(
                   Icons.check_box,
                   color: Colors.green,

@@ -18,7 +18,7 @@ class CategoriesSelection extends ConsumerWidget {
       child: Row(
         children: [
           Text(
-            'Category',
+            'Kategori',
             style: context.textTheme.titleLarge,
           ),
           const Gap(10),
