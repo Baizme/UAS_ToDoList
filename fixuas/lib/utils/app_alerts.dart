@@ -27,7 +27,7 @@ class AppAlerts {
     required Task task,
   }) async {
     Widget cancelButton = TextButton(
-      child: const Text('NO'),
+      child: const Text('Tidak'),
       onPressed: () => context.pop(),
     );
     Widget deleteButton = TextButton(
@@ -36,17 +36,17 @@ class AppAlerts {
           (value) {
             displaySnackbar(
               context,
-              'Task deleted successfully',
+              'Tugas berhasil dihapus',
             );
             context.pop();
           },
         );
       },
-      child: const Text('YES'),
+      child: const Text('Iya'),
     );
 
     AlertDialog alert = AlertDialog(
-      title: const Text('Are you sure you want to delete this task?'),
+      title: const Text('Apakah kamu yakin menghapus tugas ini?'),
       actions: [
         deleteButton,
         cancelButton,
